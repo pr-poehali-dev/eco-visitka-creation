@@ -9,10 +9,10 @@ const Index = () => {
   const contactInfo = {
     name: 'Максим',
     company: 'ЭКО-ДЕЗ',
-    phone: '+7 (999) 123-45-67',
-    email: 'info@eco-dez.online',
+    phone: '+7 (909) 362-71-25',
+    email: 'Zakaz@eco-dez.online',
     website: 'eco-dez.online',
-    whatsapp: '+79991234567',
+    whatsapp: '+79093627125',
     telegram: 'ecodez_online',
     services: [
       { name: 'Дезинсекция', icon: 'Bug' },
