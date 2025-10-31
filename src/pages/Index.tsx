@@ -12,6 +12,8 @@ const Index = () => {
     phone: '+7 (999) 123-45-67',
     email: 'info@eco-dez.online',
     website: 'eco-dez.online',
+    whatsapp: '+79991234567',
+    telegram: 'ecodez_online',
     services: [
       { name: 'Дезинсекция', icon: 'Bug' },
       { name: 'Дератизация', icon: 'Rat' },
@@ -121,6 +123,33 @@ END:VCARD`;
                   {contactInfo.website}
                 </a>
               </div>
+            </div>
+          </div>
+
+          <div className="space-y-3">
+            <h3 className="text-lg font-bold text-center text-foreground flex items-center justify-center gap-2">
+              <Icon name="MessageCircle" size={20} className="text-primary" />
+              Быстрая связь
+            </h3>
+            <div className="grid grid-cols-2 gap-3">
+              <a
+                href={`https://wa.me/${contactInfo.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-2 p-4 bg-gradient-to-br from-[#25D366] to-[#128C7E] rounded-xl hover:scale-105 transition-transform shadow-lg"
+              >
+                <Icon name="MessageCircle" size={28} className="text-white" />
+                <span className="text-sm font-semibold text-white">WhatsApp</span>
+              </a>
+              <a
+                href={`https://t.me/${contactInfo.telegram}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-2 p-4 bg-gradient-to-br from-[#229ED9] to-[#0088cc] rounded-xl hover:scale-105 transition-transform shadow-lg"
+              >
+                <Icon name="Send" size={28} className="text-white" />
+                <span className="text-sm font-semibold text-white">Telegram</span>
+              </a>
             </div>
           </div>
 
